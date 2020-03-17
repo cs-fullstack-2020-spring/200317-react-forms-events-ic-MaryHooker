@@ -1,0 +1,26 @@
+.App {
+  text-align: center;
+  height: 200vh;
+  background-color: rgb(199, 176, 176);
+  color: rgb(107, 32, 107);
+}
+
+.legend{
+  border: 3px solid rgb(107, 32, 107);
+  font-size: 18px;
+}
+
+.border{
+  border: 5px solid rgb(107, 32, 107);
+  height: 150px;
+}
+
+.input{
+  background-color: rgb(78, 25, 78);
+  color: white;
+}
+
+.button{
+  background-color: rgb(134, 38, 38);
+  color: white;
+}
