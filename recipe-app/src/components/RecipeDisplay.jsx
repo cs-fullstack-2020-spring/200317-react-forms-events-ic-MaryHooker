@@ -4,7 +4,7 @@ class RecipeDisplay extends Component {
     constructor(props) {
         super(props);
         this.state = { 
-            recipeArray: [],
+            
          }
     }
 
@@ -14,12 +14,12 @@ class RecipeDisplay extends Component {
             
             <div>
                 {
-                    this.state.recipeArray.map((recipe, index) => {
+                    this.props.recipeArray.map((recipe, index) => {
                         return(
                             <div key = {index}>
-                                <p>Title:{recipe}</p>
-                                <p>Make Time:{recipe}</p>
-                                <p>Serving Size:{recipe}</p>
+                                <p>Title:{recipe.title}</p>
+                                <p>Make Time:{recipe.time}</p>
+                                <p>Serving Size:{recipe.size}</p>
                             </div>
                         )
                     }

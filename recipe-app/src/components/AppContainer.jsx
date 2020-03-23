@@ -13,8 +13,10 @@ class AppContainer extends Component {
 
     updateRecipeArray = (newArray) =>{
         this.setState(
-            {
-                recipeArray:this.state.recipeArray
+            {           /////forgot to use the parameter
+                // recipeArray:this.state.recipeArray
+                //correct way
+                recipeArray: newArray
             }
         )
         console.log(`AppContainer ${this.state.recipeArray}`)
@@ -28,7 +30,7 @@ class AppContainer extends Component {
             <div>
                 <h1>Recipe App</h1>
                 <Header chefName='Mary'/>
-                <RecipeDisplay/>
+                <RecipeDisplay recipeArray={this.state.recipeArray}/>
                 <RecipeForm updateRecipeArray={this.updateRecipeArray}/>
             </div>
          );

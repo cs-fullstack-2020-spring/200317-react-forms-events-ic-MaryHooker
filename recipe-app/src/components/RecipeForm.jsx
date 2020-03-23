@@ -19,7 +19,7 @@ class RecipeForm extends Component {
             time: this.state.recipeMakeTime,
             size: this.state.recipeServingSize
         })
-
+        
         this.setState(
             {
                 recipeArray: this.state.recipeArray
